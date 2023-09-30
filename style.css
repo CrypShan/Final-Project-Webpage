@@ -1,0 +1,181 @@
+body, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-image: url(images/header.png);
+    background-size: cover;
+    background-position: center;
+    
+    background-color: #f7e581;
+    font-family: Arial, sans-serif;
+    color: #333; 
+    overflow: hidden; 
+}
+
+
+header {
+    text-align: center;
+    background-color: #013005;
+    background-size: cover;
+    background-position: center;
+    padding: 20px 0;
+    color: #fff; 
+}
+
+
+.services {
+    background-color: #013005;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); 
+    color: #fff; 
+}
+
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.services h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li.service {
+    background-color: #fe6d73; 
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+li.service:hover {
+    background-color: #ff474b; 
+}
+
+
+.service-info {
+    background-color: #fff; 
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); 
+}
+
+#service-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#service-description {
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #555; 
+}
+
+
+footer {
+    text-align: center;
+    background-color: #ff474b; 
+    padding: 10px 0;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}
+
+.man {
+    position: absolute;
+    right: 0; 
+    bottom: 500;
+    background-image: url(images/mowerman.png); 
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+    animation: moveMan 10s linear infinite;
+}
+.call-today {
+    position: absolute;
+    bottom: 570px; 
+    right: 0px; 
+    font-size: 3.5rem; 
+    text-align: right;
+    color: #fff; 
+    background-color: #ff474b; 
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1; 
+}
+
+
+.container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}
+
+.man {
+    position: absolute;
+    right: 0; 
+    bottom: 100; 
+    background-image: url(images/mowerman.png);
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+    animation: moveMan 10s linear infinite;
+    z-index: 2;  
+}
+
+.call-today {
+    
+    background-color:#013005;
+    height: 50px;
+    width: 1000px;
+    position: absolute;
+    animation: wave 10s ease infinite;
+}
+@keyframes wave {
+    0% {
+        opacity: 0;
+        transform: translateX(0%);
+    }
+    10% {
+        opacity: .5;
+        transform: translateX(0);
+    }
+    50% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes moveMan {
+    from {
+        right: 0;
+    }
+    to {
+        right: 100%; /* Move the man to the left */
+    }
+}
+
